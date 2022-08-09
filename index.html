@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="normalize.css">-->
+    <link rel="stylesheet" href="styles.css">
+    <title>Flexbox - Conceitos</title>
+</head>
+<body>
+    <h1>Flexbox - Conceitos</h1>
+    <h2>Comportamento padrão de um container</h2>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+    </div>
+
+    <h2>Comportamento padrão de um display:flex</h2>
+    <div class="container flex">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <h3>Caso haja muitos itens:</h2>
+    <div class="container flex">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+    </div>
+
+    <h2>Alterando o flex-direction</h2>
+    <h3>flex-direction: row (padrão)</h2>
+    <div class="container flex direction-row">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <h3>flex-direction: row-reverse</h2>
+    <div class="container flex direction-row-reverse">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <h3>flex-direction: column</h2>
+    <div class="container flex direction-column">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <h3>flex-direction: column-reverse</h2>
+    <div class="container flex direction-column-reverse">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <h2>Resolvendo o problema de muitos itens com wrap</h2>
+    <h3>Caso haja muitos itens:</h2>
+    <div class="container flex">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+    </div>
+
+    <h3>flex-wrap: nowrap</h2>
+    <div class="container flex wrap-nowrap">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+    </div>
+
+    <h3>flex-wrap: wrap</h2>
+    <div class="container flex wrap-wrap">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+    </div>
+
+    <h3>flex-wrap: wrap-reverse</h2>
+    <div class="container flex wrap-reverse">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+    </div>
+
+    <h2>Justify Content</h2>
+    <h3>justify-content: flex-start (padrão)</h2>
+    <div class="container flex justify-content-flex-start">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+    </div>
+
+    <h3>justify-content: flex-end</h2>
+    <div class="container flex justify-content-flex-end">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+    </div>
+
+    <h3>justify-content: center</h2>
+    <div class="container flex justify-content-center">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+    </div>
+
+    <h3>justify-content: space-between</h2>
+    <div class="container flex justify-content-space-between">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <h3>justify-content: space-around</h2>
+    <div class="container flex justify-content-space-around">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <h2>Align Items</h2>
+    <h3>align-items: center</h3>
+    <div class="container flex align-items-center">
+        <div class="item flex-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam ex sint iusto animi unde. Repellat iure magnam molestias recusandae saepe, incidunt quas sed nulla consectetur ullam odit sint. Voluptatem, minima!</div>
+        <div class="item flex-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam tempore adipisci voluptate reiciendis perferendis provident ad architecto aliquid excepturi. Veritatis dolores pariatur eaque harum natus cum beatae magnam blanditiis dicta.</div>
+        <div class="item flex-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, ptatum sapiente magnam iure aliquam est molestias impedit nostrum modi autem quis vel velit nam. Pariatur, quas nesciunt.</div>
+    </div>
+
+    <h3>align-items: baseline</h3>
+    <div class="container flex align-items-baseline">
+        <div class="item flex-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam ex sint iusto animi unde. Repellat iure magnam molestias recusandae saepe, incidunt quas sed nulla consectetur ullam odit sint. Voluptatem, minima!</div>
+        <div class="item flex-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam tempore adipisci voluptate reiciendis perferendis provident ad architecto aliquid excepturi. Veritatis dolores pariatur eaque harum natus cum beatae magnam blanditiis dicta.</div>
+        <div class="item flex-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, ptatum sapiente magnam iure aliquam est molestias impedit nostrum modi autem quis vel velit nam. Pariatur, quas nesciunt.</div>
+    </div>
+
+    <h3>align-items: stretch</h3>
+    <div class="container flex align-items-stretch ">
+        <div class="item flex-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam ex sint iusto animi unde. Repellat iure magnam molestias recusandae saepe, incidunt quas sed nulla consectetur ullam odit sint. Voluptatem, minima!</div>
+        <div class="item flex-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam tempore adipisci voluptate reiciendis perferendis provident ad architecto aliquid excepturi. Veritatis dolores pariatur eaque harum natus cum beatae magnam blanditiis dicta.</div>
+        <div class="item flex-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, ptatum sapiente magnam iure aliquam est molestias impedit nostrum modi autem quis vel velit nam. Pariatur, quas nesciunt.</div>
+    </div>
+
+    <h3>align-items: flex-start</h3>
+    <div class="container flex align-items-flex-start ">
+        <div class="item flex-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam ex sint iusto animi unde. Repellat iure magnam molestias recusandae saepe, incidunt quas sed nulla consectetur ullam odit sint. Voluptatem, minima!</div>
+        <div class="item flex-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam tempore adipisci voluptate reiciendis perferendis provident ad architecto aliquid excepturi. Veritatis dolores pariatur eaque harum natus cum beatae magnam blanditiis dicta.</div>
+        <div class="item flex-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, ptatum sapiente magnam iure aliquam est molestias impedit nostrum modi autem quis vel velit nam. Pariatur, quas nesciunt.</div>
+    </div>
+
+    <h3>align-items: flex-end</h3>
+    <div class="container flex align-items-flex-end ">
+        <div class="item flex-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam ex sint iusto animi unde. Repellat iure magnam molestias recusandae saepe, incidunt quas sed nulla consectetur ullam odit sint. Voluptatem, minima!</div>
+        <div class="item flex-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam tempore adipisci voluptate reiciendis perferendis provident ad architecto aliquid excepturi. Veritatis dolores pariatur eaque harum natus cum beatae magnam blanditiis dicta.</div>
+        <div class="item flex-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, ptatum sapiente magnam iure aliquam est molestias impedit nostrum modi autem quis vel velit nam. Pariatur, quas nesciunt.</div>
+    </div>
+
+    <h2>Align Content</h2>
+    <h3>align-content: center;</h3>
+    <div class="container height-1000 flex wrap-wrap align-content-center">
+        <div class="item flex-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam ex sint iusto animi unde. Repellat iure magnam molestias recusandae saepe, incidunt quas sed nulla consectetur ullam odit sint. Voluptatem, minima!</div>
+        <div class="item flex-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam tempore adipisci voluptate reiciendis perferendis provident ad architecto aliquid excepturi. Veritatis dolores pariatur eaque harum natus cum beatae magnam blanditiis dicta.</div>
+        <div class="item flex-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, ptatum sapiente magnam iure aliquam est molestias impedit nostrum modi autem quis vel velit nam. Pariatur, quas nesciunt.</div>
+        <div class="item flex-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, vero corrupti? Labore aliquid placeat reiciendis deserunt alias quaerat modi eius vero. Quidem quibusdam quaerat porro, animi beatae doloremque corporis fugit.</div>
+        <div class="item flex-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus reiciendis voluptatem quia est expedita. Minima cumque incidunt blanditiis in esse ea reiciendis unde delectus perspiciatis, quasi atque accusamus, natus minus.</div>
+        <div class="item flex-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rem debitis, animi amet saepe itaque similique blanditiis, eveniet, ipsum tempora magni iste sapiente voluptate numquam corporis recusandae enim illo mollitia?</div>
+        <div class="item flex-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam dignissimos laboriosam recusandae molestiae alias qui eveniet? Vitae fugit dolore provident facere dignissimos id quasi optio possimus? Nemo cum ipsam veniam.</div>
+    </div>
+
+    <h3>align-content: stretch;</h3>
+    <div class="container height-1000 flex wrap-wrap align-content-stretch">
+        <div class="item flex-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam ex sint iusto animi unde. Repellat iure magnam molestias recusandae saepe, incidunt quas sed nulla consectetur ullam odit sint. Voluptatem, minima!</div>
+        <div class="item flex-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam tempore adipisci voluptate reiciendis perferendis provident ad architecto aliquid excepturi. Veritatis dolores pariatur eaque harum natus cum beatae magnam blanditiis dicta.</div>
+        <div class="item flex-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, ptatum sapiente magnam iure aliquam est molestias impedit nostrum modi autem quis vel velit nam. Pariatur, quas nesciunt.</div>
+        <div class="item flex-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, vero corrupti? Labore aliquid placeat reiciendis deserunt alias quaerat modi eius vero. Quidem quibusdam quaerat porro, animi beatae doloremque corporis fugit.</div>
+        <div class="item flex-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus reiciendis voluptatem quia est expedita. Minima cumque incidunt blanditiis in esse ea reiciendis unde delectus perspiciatis, quasi atque accusamus, natus minus.</div>
+        <div class="item flex-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rem debitis, animi amet saepe itaque similique blanditiis, eveniet, ipsum tempora magni iste sapiente voluptate numquam corporis recusandae enim illo mollitia?</div>
+        <div class="item flex-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos repellat natus sit perferendis distinctio quisquam, expedita accusantium qui velit placeat facere, voluptatum ad quaerat iste quos quo esse aspernatur reiciendis.</div>
+        <div class="item flex-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum excepturi, earum quaerat, pariatur error dolor labore tempora praesentium architecto cupiditate aspernatur ab debitis animi corrupti rem voluptatum nesciunt doloribus sint.</div>
+        <div class="item flex-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam dignissimos laboriosam recusandae molestiae alias qui eveniet? Vitae fugit dolore provident facere dignissimos id quasi optio possimus? Nemo cum ipsam veniam.</div>
+    </div>
+
+    <h3>align-content: flex-start;</h3>
+    <div class="container height-1000 flex wrap-wrap align-content-flex-start">
+        <div class="item item-min flex-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam ex sint iusto animi unde. Repellat iure magnam molestias recusandae saepe, incidunt quas sed nulla consectetur ullam odit sint. Voluptatem, minima!</div>
+        <div class="item item-min flex-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam tempore adipisci voluptate reiciendis perferendis provident ad architecto aliquid excepturi. Veritatis dolores pariatur eaque harum natus cum beatae magnam blanditiis dicta.</div>
+        <div class="item item-min flex-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, ptatum sapiente magnam iure aliquam est molestias impedit nostrum modi autem quis vel velit nam. Pariatur, quas nesciunt.</div>
+        <div class="item item-min flex-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, vero corrupti? Labore aliquid placeat reiciendis deserunt alias quaerat modi eius vero. Quidem quibusdam quaerat porro, animi beatae doloremque corporis fugit.</div>
+        <div class="item item-min flex-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus reiciendis voluptatem quia est expedita. Minima cumque incidunt blanditiis in esse ea reiciendis unde delectus perspiciatis, quasi atque accusamus, natus minus.</div>
+        <div class="item item-min flex-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rem debitis, animi amet saepe itaque similique blanditiis, eveniet, ipsum tempora magni iste sapiente voluptate numquam corporis recusandae enim illo mollitia?</div>
+        <div class="item item-min flex-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos repellat natus sit perferendis distinctio quisquam, expedita accusantium qui velit placeat facere, voluptatum ad quaerat iste quos quo esse aspernatur reiciendis.</div>
+        <div class="item item-min flex-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam dignissimos laboriosam recusandae molestiae alias qui eveniet? Vitae fugit dolore provident facere dignissimos id quasi optio possimus? Nemo cum ipsam veniam.</div>
+    </div>
+
+    <h3>align-content: flex-end;</h3>
+    <div class="container height-1000 flex wrap-wrap align-content-flex-end">
+        <div class="item flex-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam ex sint iusto animi unde. Repellat iure magnam molestias recusandae saepe, incidunt quas sed nulla consectetur ullam odit sint. Voluptatem, minima!</div>
+        <div class="item flex-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam tempore adipisci voluptate reiciendis perferendis provident ad architecto aliquid excepturi. Veritatis dolores pariatur eaque harum natus cum beatae magnam blanditiis dicta.</div>
+        <div class="item flex-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, ptatum sapiente magnam iure aliquam est molestias impedit nostrum modi autem quis vel velit nam. Pariatur, quas nesciunt.</div>
+        <div class="item flex-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, vero corrupti? Labore aliquid placeat reiciendis deserunt alias quaerat modi eius vero. Quidem quibusdam quaerat porro, animi beatae doloremque corporis fugit.</div>
+        <div class="item flex-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus reiciendis voluptatem quia est expedita. Minima cumque incidunt blanditiis in esse ea reiciendis unde delectus perspiciatis, quasi atque accusamus, natus minus.</div>
+        <div class="item flex-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rem debitis, animi amet saepe itaque similique blanditiis, eveniet, ipsum tempora magni iste sapiente voluptate numquam corporis recusandae enim illo mollitia?</div>
+        <div class="item flex-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos repellat natus sit perferendis distinctio quisquam, expedita accusantium qui velit placeat facere, voluptatum ad quaerat iste quos quo esse aspernatur reiciendis.</div>
+        <div class="item flex-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam dignissimos laboriosam recusandae molestiae alias qui eveniet? Vitae fugit dolore provident facere dignissimos id quasi optio possimus? Nemo cum ipsam veniam.</div>
+    </div>
+
+    <h3>align-content: space-around;</h3>
+    <div class="container height-1000 flex wrap-wrap align-content-space-around">
+        <div class="item flex-1">Lorem ipsum dolor sit, amet consectetur adipisicing  ullam odit sint. Voluptatem, minima!</div>
+        <div class="item flex-1">Lorem ipsum dolor sit, amet consectetur adipisicing  dicta.</div>
+        <div class="item flex-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit.  iure aliquam est molestias impedit nostrum modi autem quis vel velit nam. Pariatur, quas nesciunt.</div>
+        <div class="item flex-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.  fugit.</div>
+        <div class="item flex-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit.  est  in esse ea , quasi atque accusamus, natus minus.</div>
+        <div class="item flex-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.   sapiente voluptate numquam corporis recusandae enim illo mollitia?</div>
+        <div class="item flex-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.  , voluptatum ad quaerat iste quos quo esse aspernatur reiciendis.</div>
+        <div class="item flex-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit.   ipsam veniam.</div>
+    </div>
+
+    <h3>align-content: space-between;</h3>
+    <div class="container height-1000 flex wrap-wrap align-content-space-between">
+        <div class="item flex-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam ex sint iusto animi unde. Repellat iure magnam molestias recusandae saepe, incidunt quas sed nulla consectetur ullam odit sint. Voluptatem, minima!</div>
+        <div class="item flex-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam tempore adipisci voluptate reiciendis perferendis provident ad architecto aliquid excepturi. Veritatis dolores pariatur eaque harum natus cum beatae magnam blanditiis dicta.</div>
+        <div class="item flex-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, ptatum sapiente magnam iure aliquam est molestias impedit nostrum modi autem quis vel velit nam. Pariatur, quas nesciunt.</div>
+        <div class="item flex-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, vero corrupti? Labore aliquid placeat reiciendis deserunt alias quaerat modi eius vero. Quidem quibusdam quaerat porro, animi beatae doloremque corporis fugit.</div>
+        <div class="item flex-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus reiciendis voluptatem quia est expedita. Minima cumque incidunt blanditiis in esse ea reiciendis unde delectus perspiciatis, quasi atque accusamus, natus minus.</div>
+        <div class="item flex-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rem debitis, animi amet saepe itaque similique blanditiis, eveniet, ipsum tempora magni iste sapiente voluptate numquam corporis recusandae enim illo mollitia?</div>
+        <div class="item flex-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos repellat natus sit perferendis distinctio quisquam, expedita accusantium qui velit placeat facere, voluptatum ad quaerat iste quos quo esse aspernatur reiciendis.</div>
+        <div class="item flex-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam dignissimos laboriosam recusandae molestiae alias qui eveniet? Vitae fugit dolore provident facere dignissimos id quasi optio possimus? Nemo cum ipsam veniam.</div>
+    </div>
+
+    
+
+    
+</body>
+</html>
